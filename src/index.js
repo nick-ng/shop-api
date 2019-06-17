@@ -42,6 +42,7 @@ const typeDefs = gql`
     price: Float
   }
 
+  "Products in the cart need more properties like quantity and total."
   type Item {
     id: Int
     name: String
@@ -50,6 +51,11 @@ const typeDefs = gql`
     total: Float
   }
 
+  """
+  Cart id is a number for this demo so it's easier to enter by hand.
+  In production code, I would use a uuid to prevent users from seeing each
+  other's carts. Alternatively I can associate each cart with the user's account.
+  """
   type Cart {
     id: Int
     items: [Item]
@@ -61,6 +67,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
+    "Returns a cart with the specified id. If no cart exists, a new cart will be created."
     getCart(id: Int): Cart
     newCart: Cart
     addProductToCart(cartId: Int, itemId: Int): Cart
