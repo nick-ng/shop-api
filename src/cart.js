@@ -23,7 +23,7 @@ const newCart = (startId = 0) => {
   let id = startId;
   /* Cart id is a number for this demo so it's easier to enter by hand.
    * In production code, I would use a uuid to prevent users from seeing each
-   * other's carts. Alternatively I can associate each cart with the user's account. 
+   * other's carts. Alternatively I can associate each cart with the user's account.
    */
   for (let i = 0; i < 10000; i++) {
     if (!carts[id]) {
