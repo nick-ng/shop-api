@@ -4,7 +4,7 @@ A simple catalog and shopping cart API.
 
 # Usage
 
-1. `npm install` and `npm start`
+1. `npm install` and `npm start` (or `npm run dev`)
 2. Access at GraphQL playground at `localhost:3001`
 
 Example queries and mutations:
