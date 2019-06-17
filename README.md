@@ -1,6 +1,6 @@
 # shop-api
 
-A simple catalog and shopping cart API. Access at https://shop-api.nick.ng
+A simple catalog and shopping cart API. Access at http://shop-api.nick.ng
 
 # Usage
 
