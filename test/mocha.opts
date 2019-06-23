@@ -1,0 +1,2 @@
+--require ./test/index
+--timeout 20000
